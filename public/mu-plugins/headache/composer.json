@@ -1,0 +1,27 @@
+{
+    "name": "vinkla/headache",
+    "description": "An easy-to-swallow painkiller plugin for WordPress",
+    "license": "MIT",
+    "type": "wordpress-muplugin",
+    "keywords": [
+        "wordplate",
+        "head",
+        "headache",
+        "wordpress",
+        "plugin"
+    ],
+    "authors": [
+        {
+            "name": "Vincent Klaiber",
+            "email": "hello@doubledip.se"
+        }
+    ],
+    "require": {
+        "php": "^8.1"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "preferred-install": "dist"
+    }
+}

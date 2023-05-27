@@ -1,0 +1,19 @@
+/**
+ * Theme Name: Planty
+ * Theme URI: https://github.com/votre-username/planty
+ * Description: Thème enfant pour le thème WordPlate.
+ * Version: 1.0.0
+ * Author: Kharkhour khalid
+ * Author URI: https://github.com/khalidkharkhour
+ * Template: wordplate
+ */
+
+ // Enqueue parent theme styles
+ function planty_enqueue_styles() {
+     wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
+     wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array( 'parent-style' ) );
+ }
+ add_action( 'wp_enqueue_scripts', 'planty_enqueue_styles' );
+ 
+ //  fonctions et modifications spécifiques au thème enfant 
+ 
